@@ -1,10 +1,17 @@
 
 :root {
-    --bg-color: #000000;
-    --fg-color: #ffffff;
+
+
+    --bg-color: #000;
+    --fg-color: #fff;
     --secondary-fg-color: #a1a1a1;
-    --border-color: #333333;
+
+    --border-color: #333;
     --link-hover-color: #1a73e8;
+
+    --fs-small: 1rem;
+    --fs-medium: 1.25rem;
+    --fs-large: 1.5rem;
 }
 
 body {
@@ -20,10 +27,11 @@ body {
     min-height: 100vh;
     box-sizing: border-box;
     text-align: center;
+    font-size: var(--fs-small);
 }
 
 .container {
-    max-width: 800px;
+    max-width: 600px;
     width: 100%;
 }
 
@@ -33,18 +41,21 @@ header {
 
 h1 {
     font-size: 4rem;
-    font-weight: 700;
+    font-weight: 900;
+    letter-spacing: -2px;
     margin: 0;
 }
 
 .tagline {
-    font-size: 1.25rem;
+
+    font-size: var(--fs-medium);
     color: var(--secondary-fg-color);
     margin-top: 0.5rem;
 }
 
 .projects h2 {
-    font-size: 1rem;
+
+    font-size: var(--fs-small);
     text-transform: uppercase;
     letter-spacing: 0.1em;
     color: var(--secondary-fg-color);
@@ -59,7 +70,7 @@ h1 {
 }
 
 .projects li {
-    /* The list item itself is now just a container */
+
 }
 
 .projects a {
@@ -77,13 +88,15 @@ h1 {
 }
 
 .projects h3 {
-    font-size: 1.5rem;
+
+    font-size: var(--fs-large);
     font-weight: 700;
     margin: 0 0 0.5rem;
 }
 
 .projects p {
-    font-size: 1rem;
+
+    font-size: var(--fs-small);
     color: var(--secondary-fg-color);
     margin: 0;
 }
@@ -98,10 +111,12 @@ h1 {
     }
 
     .tagline {
-        font-size: 1rem;
+
+        font-size: var(--fs-small);
     }
 
     .projects h3 {
-        font-size: 1.25rem;
+
+        font-size: var(--fs-medium);
     }
 }
