@@ -1,0 +1,107 @@
+
+:root {
+    --bg-color: #000000;
+    --fg-color: #ffffff;
+    --secondary-fg-color: #a1a1a1;
+    --border-color: #333333;
+    --link-hover-color: #1a73e8;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--fg-color);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+}
+
+header {
+    margin-bottom: 4rem;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.tagline {
+    font-size: 1.25rem;
+    color: var(--secondary-fg-color);
+    margin-top: 0.5rem;
+}
+
+.projects h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--secondary-fg-color);
+    margin-bottom: 2rem;
+}
+
+.projects ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.projects li {
+    /* The list item itself is now just a container */
+}
+
+.projects a {
+    display: block;
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--fg-color);
+    transition: border-color 0.2s ease;
+}
+
+.projects a:hover {
+    border-color: var(--fg-color);
+}
+
+.projects h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem;
+}
+
+.projects p {
+    font-size: 1rem;
+    color: var(--secondary-fg-color);
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .tagline {
+        font-size: 1rem;
+    }
+
+    .projects h3 {
+        font-size: 1.25rem;
+    }
+}
