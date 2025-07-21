@@ -106,7 +106,9 @@ h1 img {
 
 @media (max-width: 768px) {
     body {
-        padding: 1rem;
+        padding: 2rem 1rem;
+        justify-content: flex-start;
+        min-height: auto;
     }
 
     h1 {
@@ -114,12 +116,24 @@ h1 img {
     }
 
     .tagline {
-
         font-size: var(--fs-small);
+        margin: 1rem 0 2rem;
+    }
+
+    .projects h2 {
+        margin: 0 0 1rem;
+    }
+
+    .projects ul {
+        gap: 1rem;
+    }
+
+    .projects a {
+        padding: 1rem;
     }
 
     .projects h3 {
-
         font-size: var(--fs-medium);
+        margin: 0 0 0.25rem;
     }
 }
