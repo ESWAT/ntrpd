@@ -31,12 +31,8 @@ body {
 }
 
 .container {
-    max-width: 600px;
+    max-width: 700px;
     width: 100%;
-}
-
-header {
-    margin-bottom: 4rem;
 }
 
 h1 {
@@ -54,8 +50,9 @@ h1 img {
 .tagline {
 
     font-size: var(--fs-medium);
+    line-height: 1.5;
     color: var(--secondary-fg-color);
-    margin-top: 0.5rem;
+    margin: 2rem 0 4rem;
 }
 
 .projects h2 {
@@ -64,7 +61,7 @@ h1 img {
     text-transform: uppercase;
     letter-spacing: 0.1em;
     color: var(--secondary-fg-color);
-    margin-bottom: 2rem;
+    margin: 0 0 2rem;
 }
 
 .projects ul {
