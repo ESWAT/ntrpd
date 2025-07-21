@@ -7,7 +7,8 @@
     --secondary-fg-color: #a1a1a1;
 
     --border-color: #333;
-    --link-hover-color: #1a73e8;
+    --accent-color: #00c;
+    --border-radius: 3px;
 
     --fs-small: 1rem;
     --fs-medium: 1.25rem;
@@ -79,14 +80,14 @@ h1 img {
     display: block;
     padding: 1.5rem;
     border: 1px solid var(--border-color);
-    border-radius: 8px;
+    border-radius: var(--border-radius);
     text-decoration: none;
     color: var(--fg-color);
     transition: border-color 0.2s ease;
 }
 
 .projects a:hover {
-    border-color: var(--fg-color);
+    border-color: var(--accent-color);
 }
 
 .projects h3 {
