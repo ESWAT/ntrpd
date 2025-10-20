@@ -13,6 +13,7 @@
     --fs-small: 1rem;
     --fs-medium: 1.25rem;
     --fs-large: 1.5rem;
+    --fs-xlarge: 2rem;
 }
 
 body {
@@ -36,33 +37,24 @@ body {
     width: 100%;
 }
 
-h1 {
-    font-size: 4rem;
+.main-tagline {
+    font-size: var(--fs-xlarge);
     font-weight: 900;
-    letter-spacing: -2px;
-    margin: 0;
+    margin: 2rem 0;
 }
 
-h1 img {
-    display: block;
+.sub-tagline {
+    font-size: var(--fs-medium);
+    max-width: 500px;
     margin: 0 auto;
 }
 
-.tagline {
-
-    font-size: var(--fs-medium);
-    line-height: 1.5;
-    color: var(--secondary-fg-color);
-    margin: 2rem 0 4rem;
-}
-
 .projects h2 {
-
     font-size: var(--fs-small);
     text-transform: uppercase;
     letter-spacing: 0.1em;
     color: var(--secondary-fg-color);
-    margin: 0 0 2rem;
+    margin: 4rem 0 2rem;
 }
 
 .projects ul {
@@ -72,9 +64,6 @@ h1 img {
     gap: 1.5rem;
 }
 
-.projects li {
-
-}
 
 .projects a {
     display: block;
@@ -91,9 +80,8 @@ h1 img {
 }
 
 .projects h3 {
-
     font-size: var(--fs-large);
-    font-weight: 700;
+    font-weight: 900;
     margin: 0 0 0.5rem;
 }
 
