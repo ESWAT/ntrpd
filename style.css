@@ -45,8 +45,19 @@ body {
 
 .sub-tagline {
     font-size: var(--fs-medium);
-    max-width: 500px;
+    line-height: 1.8;
+    max-width: 550px;
     margin: 0 auto;
+}
+
+.sub-tagline a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.sub-tagline a:hover {
+    text-decoration: underline;
 }
 
 .projects h2 {
@@ -106,6 +117,10 @@ body {
     .tagline {
         font-size: var(--fs-small);
         margin: 1rem 0 2rem;
+    }
+
+    .sub-tagline {
+        margin-bottom: 2rem;
     }
 
     .projects h2 {
